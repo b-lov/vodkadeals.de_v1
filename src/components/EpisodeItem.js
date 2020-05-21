@@ -15,6 +15,10 @@ const EpisodeItem = ({
     month: 'long',
     year: 'numeric',
   });
+
+  const modDuration = new Date(duration);
+  console.log(modDuration);
+
   return (
     <div>
       {modDate.toString()} <br />

@@ -10,9 +10,14 @@ const EpisodeItem = ({
 }) => {
   // console.log(pubDate);
   // const { duration, subtitle } = itunes;
+  const modDate = new Date(pubDate).toLocaleDateString('de-DE', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
   return (
     <div>
-      {pubDate} <br />
+      {modDate.toString()} <br />
       {duration} <br />
       {title} <br />
       {subtitle}

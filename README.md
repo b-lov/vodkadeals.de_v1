@@ -1,1 +1,1 @@
-official home of Vodkadeals Podcast
+The official homepage of the world-famous Vodkadeals Podcast.

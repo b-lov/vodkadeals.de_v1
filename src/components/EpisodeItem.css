@@ -1,0 +1,22 @@
+.episode-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  border: 2px solid black;
+}
+
+.date {
+  color: red;
+}
+
+.duration {
+  color: green;
+}
+
+.title {
+  color: blue;
+}
+
+.subtitle {
+  color: peru;
+}

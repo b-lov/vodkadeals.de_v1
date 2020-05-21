@@ -1,5 +1,6 @@
 // vim: ft=javascriptreact
 import React from 'react';
+import './EpisodeItem.css';
 
 const EpisodeItem = ({
   data: {
@@ -16,15 +17,15 @@ const EpisodeItem = ({
     year: 'numeric',
   });
 
-  const modDuration = new Date(duration);
-  console.log(modDuration);
+  // const modDuration = new Date(duration);
+  // console.log(modDuration);
 
   return (
-    <div>
-      {modDate.toString()} <br />
-      {duration} <br />
-      {title} <br />
-      {subtitle}
+    <div className="episode-item">
+      <div className="date">{modDate.toString()}</div>
+      <div className="duration">{duration}</div>
+      <div className="title">{title}</div>
+      <div className="subtitle">{subtitle}</div>
     </div>
   );
 };

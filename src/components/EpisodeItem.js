@@ -9,8 +9,6 @@ const EpisodeItem = ({
     title,
   },
 }) => {
-  // console.log(pubDate);
-  // const { duration, subtitle } = itunes;
   const modDate = new Date(pubDate).toLocaleDateString('de-DE', {
     day: 'numeric',
     month: 'long',
@@ -22,8 +20,10 @@ const EpisodeItem = ({
 
   return (
     <div className="episode-item">
-      <div className="date">{modDate.toString()}</div>
-      <div className="duration">{duration}</div>
+      <div className="details">
+        <div className="date">{modDate.toString()}</div>
+        <div className="duration">{duration}</div>
+      </div>
       <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>
     </div>

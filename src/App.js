@@ -24,7 +24,9 @@ export default class App extends React.Component {
     } else {
       return (
         <div>
-          <EpisodeItem data={feed.items[21]} />
+          <div className="episode-container">
+            <EpisodeItem data={feed.items[21]} />
+          </div>
         </div>
       );
     }

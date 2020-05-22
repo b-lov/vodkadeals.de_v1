@@ -7,32 +7,36 @@
   border: 2px solid black;
   font-family: var(--font2);
   color: var(--color-grey);
-  /* background: peru; */
+  background: url('https://thumb.service.pinecast.com/resize?h=400&w=400&key=podcasts/covers/36c7abbb-3a7b-48ef-ada5-fd899a7f81ab/cover_quadrat_line6.png&format=jpeg');
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .details {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .date {
   padding: 0.5rem;
   text-align: left;
+  width: 50%;
 }
 
 .duration {
   padding: 0.5rem;
   text-align: right;
+  width: 50%;
 }
 
 .title {
   color: var(--color-red);
   font-size: 2rem;
   font-family: var(--font1);
-  padding: 0.5rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
   text-align: center;
-  transform: translateY(-200%);
-  /* padding-bottom: 3rem; */
+  width: 100%;
 }
 
 .subtitle {

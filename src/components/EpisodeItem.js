@@ -21,10 +21,10 @@ const EpisodeItem = ({
   return (
     <div className="episode-item">
       <div className="details">
-        <div className="date">{modDate.toString()}</div>
+        <div className="date">{modDate}</div>
         <div className="duration">{duration}</div>
+        <div className="title">{title.toUpperCase()}</div>
       </div>
-      <div className="title">{title}</div>
       <div className="subtitle">{subtitle}</div>
     </div>
   );

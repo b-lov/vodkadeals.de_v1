@@ -8,24 +8,28 @@
   font-family: var(--font2);
   color: var(--color-grey);
   background: url('https://thumb.service.pinecast.com/resize?h=400&w=400&key=podcasts/covers/36c7abbb-3a7b-48ef-ada5-fd899a7f81ab/cover_quadrat_line6.png&format=jpeg');
-  background-size: 200px;
+  background-size: 175px;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 31%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
 }
 
-.details {
+.upper {
   display: flex;
   flex-wrap: wrap;
 }
 
 .date {
-  padding: 0.5rem;
+  padding: 0.5rem 0rem 0rem 0.5rem;
+  /* padding: 0.5rem; */
   text-align: left;
   width: 50%;
 }
 
 .duration {
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
+  padding: 0.5rem 0.5rem 0rem 0rem;
   text-align: right;
   width: 50%;
 }
@@ -37,6 +41,12 @@
   padding: 0rem 0.5rem 0rem 0.5rem;
   text-align: center;
   width: 100%;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle {
